@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Karbon';
+    src: url('../fonts/karbon/Karbon-Medium.woff2') format('woff2'),
+    url('../fonts/karbon/Karbon-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karbon';
+    src: url('../fonts/karbon/Karbon-Bold.woff2') format('woff2'),
+    url('../fonts/karbon/Karbon-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karbon';
+    src: url('../fonts/karbon/Karbon-Light.woff2') format('woff2'),
+    url('../fonts/karbon/Karbon-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karbon';
+    src: url('../fonts/karbon/Karbon-Semibold.woff2') format('woff2'),
+    url('../fonts/karbon/Karbon-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karbon';
+    src: url('../fonts/karbon/Karbon-Regular.woff2') format('woff2'),
+    url('../fonts/karbon/Karbon-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html{
+    margin:0;
+    padding:0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    background:white;
+    font-family:'Karbon','Arial',sans-serif;
+    font-weight:500;
+    font-size:1.7rem;
+    color:black;
+    overflow-x: hidden;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+p {
+    margin-top: 0;
+    padding-top: 0;
+}
+a{
+    color:black;
+    text-decoration:underline;
+    transition:color 0.5s,background 0.5s;
+}
+a:hover{
+    color:#ff0000;
+}
+a.redhover:hover{
+    color:#ff0000 !important;
+}
+h2{
+    font-size:2.8rem;
+    font-weight:bold;
+    margin:0;
+    padding:6.5rem 0;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background:#f2f2f2;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+}
+a.btn-red,
+button.btn-red{
+    font-family:'Karbon','Arial',sans-serif;
+    background: red;
+    color:white;
+    text-decoration:none;
+    padding: 2.21rem 3.4rem;
+    font-size: 1.6rem;
+    width: 28.8rem;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-weight: 500;
+    transition:none;
+    border:none;
+    cursor:pointer;
+    position: relative;
+}
+a.btn-red .btn-red-text-content,
+button.btn-red .btn-red-text-content{
+    vertical-align: text-top;
+    display: inline-block;
+}
+a.btn-red::before,
+button.btn-red::before{
+    content:'\f105';
+    color: white;
+    font-family:Font Awesome\ 5 Pro;
+    vertical-align: middle;
+    padding-right:2.6rem;
+    font-size:2.6rem;
+}
+a.btn-red:hover,
+button.btn-red:hover{
+    background:#940021;
+    color:white;
+}
+a.btn-icone{
+    width:8rem;
+    height:7rem;
+    line-height: 7rem;
+    padding: 0;
+    text-align:center;
+    font-size: 2.7rem;
+}
+a.btn-icone::before{
+    content:'';
+    padding:0;
+}
+a.link{
+    color: red;
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    text-decoration:none;
+    padding-right: 12px;
+    transition:none;
+}
+a.link.white{
+    color: white;
+}
+a.link span{
+    color: red;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration:none;
+    vertical-align: middle;
+    display: inline-block;
+}
+a.link.white span{
+    color: white;
+}
+a.link::after{
+    content: '\f054';
+    padding-left: 0.6rem;
+    font-family: "Font Awesome 5 Free";
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: -16px;
+    transition:none;
+}
+a.link.white::after{
+    color: white;
+}
+a.link:hover,
+a.link span:hover{
+    color: #940021;
+}
+a.link.white:hover,
+a.link.white span:hover{
+    color: white;
+    text-decoration:underline;
+}
+ul.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.content-site {
+    max-width: 86.4rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.align-blocks-container {
+    font-size: 0;
+}
+.align-block {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: initial;
+    box-sizing: border-box;
+}
+.txt1 {
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.txt2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+/* EDITOR */
+.mce-content-body{
+    font-family:'Karbon','Arial',sans-serif;
+    font-weight:500;
+    font-size:2rem;
+}
+#tinymce.mce-content-body{
+    font-size: 17px;
+}
+
+.mce-content-body p{
+    margin:0;
+    font-weight: 500;
+}
+.mce-content-body h2{
+    font-weight:bold;
+    font-size:2.8rem;
+}
+#tinymce.mce-content-body h2{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .mce-content-body h2{
+        font-size:7.29vw;
+        line-height:7.29vw;
+    }
+    .mce-content-body{
+        font-size: 4.43vw;
+        line-height: 5.43vw;
+    }
+
+}
+/* END EDITOR */
+
+@media screen and (min-width: 1700px) {
+    html{
+        font-size:72.5%;
+    }
+}
+@media screen and (max-width: 1150px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 40%;
+    }
+    .content-site {
+        max-width: 100%;
+        padding: 0 3rem ;
+        box-sizing: border-box;
+    }
+    .txt1 {
+        font-size: 3.7rem;
+    }
+    .txt2 {
+        font-size: 2.8rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 62.5%;
+    }
+}
